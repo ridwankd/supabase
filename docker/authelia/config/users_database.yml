@@ -1,0 +1,19 @@
+# yamllint disable rule:line-length
+---
+###############################################################
+#                         Users Database                      #
+###############################################################
+
+# This file can be used if you do not have an LDAP set up.
+
+users:
+  kamsitdigital:
+    disabled: false
+    displayname: "Kamsitdigital"
+    password: "$argon2id$v=19$m=16,t=2,p=1$d2hLM3dKOWtGV3FyWHdybA$8eSixL7l5s8Lq6sln8C6Ww"  # Password is 'authelia'
+    email: ridwan@kamsit.com
+    groups:
+      - admins
+      - dev
+...
+# yamllint enable rule:line-length
